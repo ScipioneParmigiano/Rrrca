@@ -1,39 +1,8 @@
 [
     {
         "file": "/home/pietro/Desktop/Rrrca/src/ExposeDistributionEmbedding.cpp",
-        "file_last_write": 1724944042.0,
-        "definitions": [
-            {
-                "usr": "c:@S@DistributionEmbedding",
-                "kind": 2,
-                "parent_name": "",
-                "name": "DistributionEmbedding",
-                "file": "/home/pietro/Desktop/Rrrca/src/ExposeDistributionEmbedding.cpp",
-                "line": 44,
-                "column": 7,
-                "hidden": false
-            },
-            {
-                "usr": "c:@S@DistributionEmbedding@F@getMatrix#1",
-                "kind": 7,
-                "parent_name": "DistributionEmbedding",
-                "name": "getMatrix",
-                "file": "/home/pietro/Desktop/Rrrca/src/ExposeDistributionEmbedding.cpp",
-                "line": 49,
-                "column": 21,
-                "hidden": false
-            },
-            {
-                "usr": "c:@S@DistributionEmbedding@F@setMatrix#&1$@N@Eigen@S@Matrix>#d#VI-1#VI-1#VI0#VI-1#VI-1#",
-                "kind": 7,
-                "parent_name": "DistributionEmbedding",
-                "name": "setMatrix(const Eigen::MatrixXd &)",
-                "file": "/home/pietro/Desktop/Rrrca/src/ExposeDistributionEmbedding.cpp",
-                "line": 54,
-                "column": 10,
-                "hidden": false
-            }
-        ],
+        "file_last_write": 1724945900.0,
+        "definitions": [],
         "hidden": false
     },
     {

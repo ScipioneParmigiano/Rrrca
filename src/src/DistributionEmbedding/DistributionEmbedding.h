@@ -53,11 +53,13 @@ private:
         
         
         Qx =  basx.matrixQ() ;
+        std::cout << 16 << std::endl;
         Kxblock = basx.eval(xdata);
         
+        std::cout << 16.5 << std::endl;
 
         LX = Kxblock * Qx;
-        
+        std::cout << 17 << std::endl;
         
         pivy.compute ( Ky,prec);
         basy.init(Ky, pivy.pivots());
