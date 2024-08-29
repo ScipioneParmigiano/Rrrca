@@ -1,0 +1,14 @@
+Package: Rrrca
+Type: Package
+Title: What the Package Does (Short Line)
+Version: 1.0
+Date: 2024-08-29
+Author: Who wrote it
+Maintainer: Who to complain to
+     <yourfault@somewhere.net>
+Description: More about what it does (maybe more
+     than one line).
+License: What license is it under?
+Imports: Rcpp (>= 1.0.13)
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 7.3.2

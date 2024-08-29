@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+// This file is part of RRCA, the Roadrunner Covariance Analsys package.      //
+//                                                                            //
+// Copyright (c) 2021, Michael Multerer and Paul Schneider                    //
+//                                                                            //
+// All rights reserved.                                                       //
+//                                                                            //
+// This source code is subject to the BSD 3-clause license and without        //
+// any warranty, see <https://github.com/muchip/RRCA> for further             //
+// information.                                                               //
+////////////////////////////////////////////////////////////////////////////////
+#ifndef RRCA_DISTRIBUTIONEMBEDDING_MODULE_
+#define RRCA_DISTRIBUTIONEMBEDDING_MODULE_
+
+
+#include <vector>
+#include <memory>
+#include <ctime>
+#include <set>
+#include <map>
+#include <random>
+#include <chrono>
+#include <Eigen/Dense>
+// #include <unsupported/Eigen/KroneckerProduct>
+
+// #ifdef RRCA_HAVE_GUROBI
+// #include <gurobi_c++.h>
+// #endif
+
+
+
+#include "src/util/Macros.h"
+#include "src/util/LLTspectralDecomposer.h"
+#include "src/DataPreprocessing/DataPreprocessing.h"
+
+
+#include "KernelMatrix"
+// #include "Clustering"
+
+#include "src/CholeskyDecomposition/CholeskyDecompositionBase.h"
+#include "src/CholeskyDecomposition/PivotedCholeskyDecomposition.h"
+#include "src/CholeskyDecomposition/NystromCholeskyDecomposition.h"
+
+#include "src/KernelBasis/KernelBasis.h"
+
+namespace RRCA {
+    enum Solver {Gurobi=0, Mosek=1};
+};
+
+
+
+
+// #ifdef RRCA_HAVE_MOSEK
+// #include "fusion.h"
+// #endif
+
+#include "src/DistributionEmbedding/DistributionEmbedding.h"
+// #include "src/DistributionEmbedding/PQDistributionEmbedding.h"
+// // #include "src/DistributionEmbedding/DistributionEmbeddingMKLSUM_Y.h"
+// // #include "src/DistributionEmbedding/DistributionEmbeddingTensorMKL.h"
+// // #include "src/DistributionEmbedding/DistributionEmbeddingTensorSUM.h"
+// // #include "src/DistributionEmbedding/DistributionEmbeddingSUM_Y.h"
+// #include "src/DistributionEmbedding/PolynomialEmbedding.h"
+// #include "src/DistributionEmbedding/ConditionalDistributionEmbedding.h"
+// #include "src/DistributionEmbedding/ConditionalDistributionEmbeddingAlt.h"
+// // #include "src/DistributionEmbedding/ConditionalDistributionEmbeddingSUM_Y.h"
+// #include "src/DistributionEmbedding/DistributionEmbeddingSample.h"
+// #include "src/DistributionEmbedding/DistributionEmbeddingSampleXY.h"
+// // #include "src/DistributionEmbedding/DistributionEmbeddingSampleTensorProduct.h"
+
+// #include "src/DistributionEmbedding/JointDistributionPolynomialEmbedding.h"
+// #include "src/DistributionEmbedding/JointDistributionPolynomialEmbeddingAlt.h"
+// // #include "src/DistributionEmbedding/JointDistributionPolynomialEmbedding_sumx.h"
+
+
+
+#endif

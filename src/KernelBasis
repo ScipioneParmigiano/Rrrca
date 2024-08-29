@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////////////////////////////
+// This file is part of RRCA, the Roadrunner Covariance Analsys package.      //
+//                                                                            //
+// Copyright (c) 2021, Michael Multerer and Paul Schneider                    //
+//                                                                            //
+// All rights reserved.                                                       //
+//                                                                            //
+// This source code is subject to the BSD 3-clause license and without        //
+// any warranty, see <https://github.com/muchip/RRCA> for further             //
+// information.                                                               //
+////////////////////////////////////////////////////////////////////////////////
+#ifndef RRCA_KERNELBASIS_MODULE_
+#define RRCA_KERNELBASIS_MODULE_
+
+#include <Eigen/Dense>
+#include <memory>
+
+#include "KernelMatrix"
+#include "CholeskyDecomposition"
+
+#include "src/KernelBasis/KernelBasis.h"
+
+#endif

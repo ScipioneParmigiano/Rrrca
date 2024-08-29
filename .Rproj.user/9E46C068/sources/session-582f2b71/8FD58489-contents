@@ -1,0 +1,7 @@
+library(Rrrca)
+
+Rrrca::DistributionEmbedding
+
+ben = new(DistributionEmbedding, matrix(1:9, nrow=3))
+
+ben$getMatrix()

@@ -1,0 +1,6 @@
+useDynLib(Rrrca, .registration = TRUE)
+importFrom(Rcpp, evalCpp)
+export(DistributionEmbedding)
+import(methods)
+
+#exportPattern("^[[:alpha:]]+")
