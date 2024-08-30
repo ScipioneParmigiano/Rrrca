@@ -15,11 +15,11 @@
 namespace RRCA {
 
 template <typename KernelMatrix>
-class PivotedCholeskyDecompositonSmallMatrix
+class PivotedCholeskyDecompositionSmallMatrix
     : public CholeskyDecompositionBase<
-          PivotedCholeskyDecompositonSmallMatrix<KernelMatrix>, KernelMatrix> {
+          PivotedCholeskyDecompositionSmallMatrix<KernelMatrix>, KernelMatrix> {
 public:
-  typedef CholeskyDecompositionBase<PivotedCholeskyDecompositonSmallMatrix,
+  typedef CholeskyDecompositionBase<PivotedCholeskyDecompositionSmallMatrix,
                                     KernelMatrix>
       Base;
   // get types from base class
@@ -31,9 +31,9 @@ public:
   using Base::info_;
   using Base::Lmatrix_;
   using Base::tol_;
-  PivotedCholeskyDecompositonSmallMatrix() {}
+  PivotedCholeskyDecompositionSmallMatrix() {}
   // non-void constructor
-  PivotedCholeskyDecompositonSmallMatrix(const kernelMatrix &C,
+  PivotedCholeskyDecompositionSmallMatrix(const kernelMatrix &C,
                                          value_type tol) {
     compute(C, tol);
   }

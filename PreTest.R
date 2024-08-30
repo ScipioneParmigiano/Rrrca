@@ -1,4 +1,6 @@
 library(Rrrca)
+Rrrca::DistributionEmbedding
+
 library(Matrix)
 
 l1 <- 0.8
@@ -44,13 +46,14 @@ uniMatr <- matrix(c(
 
 train <- chol %*% uniMatr 
 
-print(train)
 xtrain = as.matrix(train[2:3, ])
 ytrain = as.matrix(train[1, ])
 
+print("\n\n")
+print(xtrain)
+print(ytrain)
+
 embedding <- new(DistributionEmbedding, xtrain, ytrain)
 
-result <- embedding$solveUnconstrained(l1, l2, tol, lam)
+embedding$solveUnconstrained(l1, l2, tol, lam)
 
-print("res")
-print(result)

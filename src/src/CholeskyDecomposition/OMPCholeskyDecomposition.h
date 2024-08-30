@@ -15,11 +15,11 @@
 namespace RRCA {
 
 template <typename KernelMatrix>
-class OMPCholeskyDecompositon
-    : public CholeskyDecompositionBase<OMPCholeskyDecompositon<KernelMatrix>,
+class OMPCholeskyDecomposition
+    : public CholeskyDecompositionBase<OMPCholeskyDecomposition<KernelMatrix>,
                                        KernelMatrix> {
  public:
-  typedef CholeskyDecompositionBase<OMPCholeskyDecompositon, KernelMatrix> Base;
+  typedef CholeskyDecompositionBase<OMPCholeskyDecomposition, KernelMatrix> Base;
   // get types from base class
   using value_type = typename Base::value_type;
   using kernelMatrix = typename Base::kernelMatrix;
@@ -29,9 +29,9 @@ class OMPCholeskyDecompositon
   using Base::info_;
   using Base::Lmatrix_;
   using Base::tol_;
-  OMPCholeskyDecompositon() {}
+  OMPCholeskyDecomposition() {}
   // non-void constructor
-  OMPCholeskyDecompositon(const kernelMatrix &C, const Vector &f,
+  OMPCholeskyDecomposition(const kernelMatrix &C, const Vector &f,
                           value_type tol,Eigen::Index step_limit = 0) {
     compute(C, f, tol,step_limit);
   }

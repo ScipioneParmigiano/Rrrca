@@ -15,11 +15,11 @@
 namespace RRCA {
 
 template <typename KernelMatrix>
-class NystromCholeskyDecompositon
+class NystromCholeskyDecomposition
     : public CholeskyDecompositionBase<
-          NystromCholeskyDecompositon<KernelMatrix>, KernelMatrix> {
+          NystromCholeskyDecomposition<KernelMatrix>, KernelMatrix> {
  public:
-  typedef CholeskyDecompositionBase<NystromCholeskyDecompositon, KernelMatrix>
+  typedef CholeskyDecompositionBase<NystromCholeskyDecomposition, KernelMatrix>
       Base;
   // get types from base class
   using value_type = typename Base::value_type;
@@ -30,9 +30,9 @@ class NystromCholeskyDecompositon
   using Base::info_;
   using Base::Lmatrix_;
   using Base::tol_;
-  NystromCholeskyDecompositon() { mtwister_.seed(std::time(NULL)); }
+  NystromCholeskyDecomposition() { mtwister_.seed(std::time(NULL)); }
   // non-void constructor
-  NystromCholeskyDecompositon(const kernelMatrix &C, value_type tol) {
+  NystromCholeskyDecomposition(const kernelMatrix &C, value_type tol) {
     mtwister_.seed(std::time(NULL));
     compute(C, tol);
   }
